@@ -1,6 +1,7 @@
 # Vector-and-Facated-Search
 
-Overview:
+
+## *Overview:*
 
 This repository contains the analysis for the generic dataset, which evaluates the performance of DuckDB and Redis for vector search and faceted search operations. This application compares the performance of both databases in terms of search latency, memory usage, and index build time.
 
@@ -14,7 +15,8 @@ Sentence-Transformers (for generating embeddings)
 
 time, string, pickle, base64,memory_profiler, concurrent
 
-*Databases:*
+
+## *Databases:*
 
 DuckDB: For SQL-based querying and vector search.
 
@@ -22,7 +24,8 @@ Redis: For Redis Stack-based vector search and faceted filtering.
 
 Vector Search Techniques: Cosine similarity is used for vector matching.
 
-*Data Generation*
+
+## *Data Generation*
 A dataset of 100,000 product records is created with the following attributes:
 
 Product ID: A unique identifier (e.g., 000001, 000002, …, 100000).
@@ -48,10 +51,12 @@ With vector matching method selected top 10 similar products given a query vecto
 
 {'Product_ID': 134, 'Product_Name': 'Enigmatic Adventure for Classic Journey', 'Product_Description': 23.0, 'Product_Price': 'Comprehensive science book for adults.', 'Similarity': 0.009361033532556151}
 
+
 ## Performance Results
 Overall Insight:
 
 DuckDB is well suited for scenarios prioritizing lightweight operations and quick indexing, while Redis provides substantial benefits for both small and large datasets, especially where query performance and memory optimization are critical.
+
 
 ## For DuckDB
 -DuckDB performs exceptionally well for larger datasets after indexing, with reduced query latency and memory usage. -However, for small datasets, the performance gain is minimal or even slightly negative, suggesting that indexing is more beneficial for large scale data operations.
