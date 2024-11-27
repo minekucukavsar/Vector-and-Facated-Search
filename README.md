@@ -14,7 +14,7 @@ Sentence-Transformers (for generating embeddings)
 
 time, string, pickle, base64,memory_profiler, concurrent
 
-Databases:
+*Databases:*
 
 DuckDB: For SQL-based querying and vector search.
 
@@ -22,7 +22,7 @@ Redis: For Redis Stack-based vector search and faceted filtering.
 
 Vector Search Techniques: Cosine similarity is used for vector matching.
 
-Data Generation
+*Data Generation*
 A dataset of 100,000 product records is created with the following attributes:
 
 Product ID: A unique identifier (e.g., 000001, 000002, …, 100000).
@@ -48,7 +48,7 @@ With vector matching method selected top 10 similar products given a query vecto
 
 {'Product_ID': 134, 'Product_Name': 'Enigmatic Adventure for Classic Journey', 'Product_Description': 23.0, 'Product_Price': 'Comprehensive science book for adults.', 'Similarity': 0.009361033532556151}
 
-Performance Results
+## Performance Results
 Overall Insight:
 
 DuckDB is well suited for scenarios prioritizing lightweight operations and quick indexing, while Redis provides substantial benefits for both small and large datasets, especially where query performance and memory optimization are critical.
@@ -122,7 +122,7 @@ Query Latency: 103.6501 seconds
 Memory Usage: 4.8008 MB
 
 ## Tests for both Databases
-## For DuckDB
+*For DuckDB*
 Query Time Analysis: The average time for queries decreases as more filters are applied, significantly reducing from 1 filter to 2 filters. The addition of a vector does not seem to affect the query time drastically, though it is slightly higher for a single filter.
 
 Statistical Insights:
