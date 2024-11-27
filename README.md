@@ -1,4 +1,4 @@
-# Vector-and-Facated-Search
+# Vector-and-Faceted-Search
 
 
 ## *Overview:*
