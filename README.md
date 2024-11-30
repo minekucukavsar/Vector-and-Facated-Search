@@ -43,13 +43,11 @@ Vector Embedding: A vector representation of the product description using the S
 Vector and Faceted Search Implementation
 The project evaluates the performance of two databases in handling vector search and faceted search, with specific emphasis on:
 
-With vector matching method selected top 10 similar products given a query vector, output example(duckDB);
+With vector matching method selected top 10 similar products given a query vector, output example(Redis);
 
-{'Product_ID': 19, 'Product_Name': 'Mysterious Adventure of Charming Chronicles', 'Product_Description': 42.0, 'Product_Price': 'Comprehensive science book for adults.', 'Similarity': 0.009361033532556151}
-
-{'Product_ID': 36, 'Product_Name': 'Brilliant Tale for Classic Chronicles', 'Product_Description': 153.0, 'Product_Price': 'Comprehensive science book for adults.', 'Similarity': 0.009361033532556151}
-
-{'Product_ID': 134, 'Product_Name': 'Enigmatic Adventure for Classic Journey', 'Product_Description': 23.0, 'Product_Price': 'Comprehensive science book for adults.', 'Similarity': 0.009361033532556151}
+*{'Product_ID': 'Unknown', 'Product_Name': 'Enigmatic Quest for Unforgettable Chronicles', 'Product_Description': 'No Description', 'Product_Price': 0.0, 'Similarity': 0.0879556342527879}*
+*{'Product_ID': 'Unknown', 'Product_Name': 'Enigmatic Journey in Charming Journey', 'Product_Description': 'No Description', 'Product_Price': 0.0, 'Similarity': 0.0879556342527879}*
+*{'Product_ID': 'Unknown', 'Product_Name': 'Unforgettable Story in Charming Chronicles', 'Product_Description': 'No Description', 'Product_Price': 0.0, 'Similarity': 0.0879556342527879}*
 
 
 ## Performance Results
