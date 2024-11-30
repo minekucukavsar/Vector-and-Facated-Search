@@ -46,7 +46,9 @@ The project evaluates the performance of two databases in handling vector search
 With vector matching method selected top 10 similar products given a query vector, output example(Redis);
 
 *{'Product_ID': 'Unknown', 'Product_Name': 'Enigmatic Quest for Unforgettable Chronicles', 'Product_Description': 'No Description', 'Product_Price': 0.0, 'Similarity': 0.0879556342527879}*
+
 *{'Product_ID': 'Unknown', 'Product_Name': 'Enigmatic Journey in Charming Journey', 'Product_Description': 'No Description', 'Product_Price': 0.0, 'Similarity': 0.0879556342527879}*
+
 *{'Product_ID': 'Unknown', 'Product_Name': 'Unforgettable Story in Charming Chronicles', 'Product_Description': 'No Description', 'Product_Price': 0.0, 'Similarity': 0.0879556342527879}*
 
 
